@@ -2,7 +2,7 @@
 
 Fluxa is a cutting-edge, proprietary application designed for efficient text summarization and PDF processing. It employs state-of-the-art deep learning models, particularly transformers, to provide high-quality, real-time summaries. The application includes Optical Character Recognition (OCR) for PDF documents that contain images, allowing for comprehensive text extraction.
 
-<img src="assets/mainpng" alt="Fluxa Logo" width="400"/>
+<img src="assets/fluxa.png" alt="Fluxa Logo" width="400"/>
 
 ## Features
 
