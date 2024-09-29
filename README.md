@@ -43,42 +43,4 @@ For more information, please contact the project team.
 ## License
 
 This project is proprietary and closed-source.
-**
-# FLUXA AI
 
-Fluxa AI is an innovative website that leverages computer vision technology and advanced language models to create personalized recipes. The platform prompts users to take a photo of their fridge, detects the ingredients within using state-of-the-art image recognition, and generates unique recipes tailored to those ingredients. The process combines cutting-edge deep learning models for visual recognition with powerful natural language processing (NLP) techniques to produce creative, user-specific cooking solutions.
-
-<img src="assets/fluxa.png" alt="Fluxa Logo" width="400"/>
-
-## Features
-
-- **Ingredient Detection**: Utilizes deep learning models to identify various ingredients in user-submitted photos. The system can accurately detect common food items and handle diverse image inputs, even for cluttered fridge shelves.
-- **Recipe Generation**: Integrates a fine-tuned LLM (Large Language Model) to produce unique, creative recipes based on detected ingredients, ensuring variety and culinary innovation.
-- **Real-Time Processing**: High-speed processing ensures that recipes are generated quickly and accurately, even with complex image data.
-
-## How It Works
-
-1. **Photo Upload**: The user takes a photo of their fridge using a smartphone or other device and uploads it to the Fluxa platform.
-2. **Ingredient Detection**: The platform employs computer vision techniques to detect and label ingredients in the image.
-3. **Recipe Generation**: Using detected ingredients, the model generates a tailored recipe with detailed instructions.
-   
-## Advanced Techniques
-
-- **Transformers for NLP**: The recipe generation utilizes a fine-tuned transformer-based model, which is capable of understanding the context of ingredients and suggesting unique recipes.
-- **Computer Vision Models**: Incorporates deep learning models like YOLO or EfficientDet for robust image recognition and ingredient classification.
-
-## Access
-
-The application is available online at [Fluxa](https://www.fluxa.pro/).
-
-## Visual Assets
-
-This project includes logos and visual assets, including a **Medium-size logo** located at `assets/logo.png`.
-
-## Deployment
-
-The application is deployed using Flask for the web interface and can be scaled with technologies like Gunicorn and Nginx for high-demand environments. It is built to handle real-time image and text processing tasks, making it versatile for generating recipes based on complex ingredient lists.
-
-## License
-
-This project is proprietary and closed-source.
