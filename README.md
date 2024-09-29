@@ -1,30 +1,28 @@
 # FLUXA AI
 
-Fluxa is a cutting-edge, proprietary application designed for efficient text summarization and PDF processing. It employs state-of-the-art deep learning models, particularly transformers, to provide high-quality, real-time summaries. The application includes Optical Character Recognition (OCR) for PDF documents that contain images, allowing for comprehensive text extraction.
+Fluxa is an innovative AI-powered platform designed to help users generate recipes based on the contents of their fridge. By simply uploading a photo of their fridge, Fluxa uses advanced image recognition models to detect the ingredients and suggest relevant recipes. It employs a custom-trained YOLO (You Only Look Once) model to analyze the image and identify ingredients, making it easy to create delicious meals based on what you already have.
 
 <img src="assets/refrigerator.png" alt="Fluxa Logo" width="400"/>
 
 ## Features
 
-- **Text Summarization**: Utilizes a fine-tuned BART (Bidirectional and Auto-Regressive Transformer) model to condense long pieces of text into coherent and concise summaries.
-- **PDF Summarization**: Capable of extracting text from PDF files and applying OCR to images within the PDFs to recognize embedded text.
-- **Real-Time Processing**: High-speed processing ensures that even large documents are summarized quickly and accurately.
+- **Ingredient Detection**: Utilizes a custom-trained YOLO model to accurately identify the ingredients in a photo of your fridge.
+- **Recipe Generation**: Provides recipe recommendations based on detected ingredients, helping users minimize food waste and explore new meal options.
+- **User-Friendly Interface**: Easy-to-use web application where users can upload a single image and get real-time recipe suggestions.
 
 ## How It Works
 
-1. **Text Summarization**: The user inputs text that the model processes, leveraging advanced transformer-based architectures like BART to generate a summarized version. The BART model operates as a sequence-to-sequence framework, which is highly effective for tasks involving text generation, translation, and summarization.
-   
-2. **PDF Upload and OCR**: For PDF files, the application uses PyMuPDF to extract text directly from PDF documents. For pages with images, the Tesseract OCR engine is utilized to perform text recognition. This combination ensures that both digital text and scanned text can be processed and summarized effectively.
+1. **Upload an Image**: The user takes a photo of their fridge's contents and uploads it to the platform.
+2. **Ingredient Detection**: Fluxa employs a YOLO model to detect and classify the ingredients visible in the image.
+3. **Recipe Suggestion**: Using the list of detected ingredients, Fluxa generates a variety of recipes for the user to choose from.
 
-3. **Model Architecture**: The core summarization engine uses a pre-trained BART model fine-tuned for summarization tasks. BART operates using an encoder-decoder mechanism where the input sequence is first encoded into a latent space, and the decoder generates the summarized output. Techniques such as beam search and length penalties are employed to ensure high-quality outputs, even for diverse and complex texts.
+## Model Architecture
 
-## Advanced Techniques
+The ingredient detection model uses a custom-trained YOLO architecture optimized for identifying common household items and food ingredients. YOLO is a state-of-the-art object detection framework that performs real-time image analysis, making it highly efficient for this use case.
 
-- **Transformers**: At the heart of the system is the transformer architecture, which enables the model to capture long-range dependencies in the input text. This is critical for generating contextually aware and semantically accurate summaries.
-  
-- **OCR Integration**: The app integrates OCR via the Tesseract engine, which is particularly useful for processing scanned documents or PDFs containing images with embedded text. The extracted text is then passed through the BART model for summarization.
+## Deployment
 
-- **GPU Acceleration**: For improved performance, the model supports GPU acceleration, which significantly speeds up both the text generation and OCR processes.
+The application is deployed using a combination of Flask for the backend and React for the front end, ensuring a seamless user experience. The backend handles image processing and recipe generation, while the front end provides an intuitive interface for users to interact with.
 
 ## Access
 
@@ -34,13 +32,9 @@ The application is available online at [Fluxa](https://www.fluxa.pro/).
 
 This project includes logos and visual assets, including a **Medium-size logo** located at `assets/logo.png`.
 
-## Deployment
-
-The application is deployed using Flask for the web interface and can be scaled with technologies like Gunicorn and Nginx for high-demand environments. It is built to handle a range of real-time text processing tasks, from summarizing lengthy articles to parsing and summarizing complex PDF documents with embedded text.
-
-For more information, please contact the project team.
-
 ## License
 
 This project is proprietary and closed-source.
 
+For more information, please contact the project team.
+"""
